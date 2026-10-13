@@ -67,6 +67,6 @@ uv sync --frozen
 
 ## 来源与使用
 
-数据来源及适用条款见[data/README.md](data/README.md)。第三方代码与 CheMeleon 权重来源见[THIRD_PARTY.md](THIRD_PARTY.md)，许可原文见[`licenses/`](licenses/)。本项目自有代码尚未声明对外许可；仓库公开可见不等于已授予再使用权。引用方法或数据时，请同时参考[文献清单](docs/references.md)中的原始论文和数据来源。
+本项目自有代码与文档采用[MIT 许可证](LICENSE)。数据、模型权重及第三方材料仍按各自条款使用，详见[data/README.md](data/README.md)、[THIRD_PARTY.md](THIRD_PARTY.md)及[`licenses/`](licenses/)中的原许可；项目 MIT 许可不覆盖这些单独来源的材料。引用方法或数据时，请同时参考[文献清单](docs/references.md)中的原始论文和数据来源。
 
 仓库默认英文文档；此页提供与英文首页一致的中文研究口径。

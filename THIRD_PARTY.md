@@ -9,4 +9,4 @@
 | WO2024028364A1 | Single-series external retrospective evaluation | [Public patent record](https://patents.google.com/patent/WO2024028364A1/en). The aggregate metrics are included here; manually transcribed row-level patent material is held outside Git pending a separate redistribution review. |
 | PDB 9WIJ | Source structure for conditional pose work | [RCSB entry](https://www.rcsb.org/structure/9WIJ); derived pose coordinates and MD trajectories are outside Git. |
 
-Installed Python packages have their own terms. Exact package versions are recorded in `uv.lock` and the optional environments. The project has not declared a license for its own code. Upstream MIT notices do not extend to all code, data or results in this repository.
+Project-authored code and documentation are licensed under the [project MIT License](LICENSE). This license does not replace the separate terms of the data, model checkpoints or third-party material above. Installed Python packages have their own terms; exact versions are recorded in `uv.lock` and the optional environments.

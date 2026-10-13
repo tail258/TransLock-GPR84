@@ -45,4 +45,4 @@ ChEMBL归属EBI及原文献作者，保留CC BY-SA 3.0：[许可全文](https://
 
 2026-10-03核对[BindingDB官方许可说明](https://www.bindingdb.org/rwd/bind/info.jsp)：其自行整理的数据标注CC BY 3.0，导入ChEMBL的数据保留CC BY-SA 3.0。本包592条结构参照保留的是网页行号与结构，尚未逐行确认所属来源类别，因此不统一改写其许可。专利手工转录派生材料的单独再发布许可状态保持原记录。
 
-[RCSB官方政策](https://www.rcsb.org/pages/policies)将PDB档案数据列为CC0 1.0；本包9WIJ派生坐标保留PDB编号、结构来源和处理说明。CheMeleon使用[Zenodo固定v2记录15460715](https://zenodo.org/records/15460715)及随包原MIT许可。上述许可各自对应源资源，不扩展为全部代码、权重和数据的统一授权。本项目自有成果的对外授权由项目团队决定。
+[RCSB官方政策](https://www.rcsb.org/pages/policies)将PDB档案数据列为CC0 1.0；本包9WIJ派生坐标保留PDB编号、结构来源和处理说明。CheMeleon使用[Zenodo固定v2记录15460715](https://zenodo.org/records/15460715)及随包原MIT许可。上述许可各自对应源资源，不扩展为全部代码、权重和数据的统一授权。本项目自有代码与文档采用[MIT许可](../LICENSE)；数据、权重和第三方材料仍分别遵守其适用条款。

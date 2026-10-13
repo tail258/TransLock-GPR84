@@ -67,6 +67,6 @@ Read the [model card](models/Model_Card.md), [methods](docs/methods.md), and [ev
 
 ## Provenance and reuse
 
-Data sources and their terms are listed in [data/README.md](data/README.md). Third-party code and the CheMeleon checkpoint are documented in [THIRD_PARTY.md](THIRD_PARTY.md); their original notices are in [`licenses/`](licenses/). The project has not yet declared a license for its own code, so public visibility should not be taken as a grant of reuse rights. Please cite the upstream papers and datasets shown in [references](docs/references.md) when using the methods or data.
+Project-authored code and documentation are available under the [MIT License](LICENSE). Data, model checkpoints and third-party material retain their own terms: see [data/README.md](data/README.md), [THIRD_PARTY.md](THIRD_PARTY.md) and the original notices in [`licenses/`](licenses/). The project MIT license does not grant rights to those separate materials. Please cite the upstream papers and datasets shown in [references](docs/references.md) when using the methods or data.
 
 **Project language:** English documentation is the default. A matched [Chinese README](README.zh-CN.md) is maintained for readers of the original research records.
