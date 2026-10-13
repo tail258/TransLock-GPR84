@@ -1,0 +1,130 @@
+{
+  "status": "exploratory_retrospective_source_holdout_not_blind_test",
+  "feature_seconds": 0.05343782200000646,
+  "total_seconds": 0.7582487700000229,
+  "folds": [
+    {
+      "document_id": "CHEMBL4673243",
+      "train_units": 234,
+      "test_units": 39,
+      "excluded_train_connection_overlap": 4,
+      "status": "complete",
+      "model_seconds": {
+        "lr_graph_weighted": 0.1530657219999796,
+        "lr_assay_balanced": 0.005465838999981543,
+        "nearest_measured_strong": 0.00987431600000832
+      },
+      "training_feature_columns": 2039,
+      "nearest_train_tanimoto_median": 0.4657534246575342
+    },
+    {
+      "document_id": "CHEMBL4706630",
+      "train_units": 262,
+      "test_units": 14,
+      "excluded_train_connection_overlap": 1,
+      "status": "complete",
+      "model_seconds": {
+        "lr_graph_weighted": 0.0038814800000182004,
+        "lr_assay_balanced": 0.0037981129999877794,
+        "nearest_measured_strong": 0.004373934999989615
+      },
+      "training_feature_columns": 2269,
+      "nearest_train_tanimoto_median": 0.7270856806936756
+    },
+    {
+      "document_id": "CHEMBL5137091",
+      "train_units": 195,
+      "test_units": 80,
+      "excluded_train_connection_overlap": 2,
+      "status": "complete",
+      "model_seconds": {
+        "lr_graph_weighted": 0.003336543999978403,
+        "lr_assay_balanced": 0.003056554000011147,
+        "nearest_measured_strong": 0.016308212000012645
+      },
+      "training_feature_columns": 1744,
+      "nearest_train_tanimoto_median": 0.22431386347642507
+    },
+    {
+      "document_id": "CHEMBL5154757",
+      "train_units": 224,
+      "test_units": 48,
+      "excluded_train_connection_overlap": 5,
+      "status": "complete",
+      "model_seconds": {
+        "lr_graph_weighted": 0.003377188000001752,
+        "lr_assay_balanced": 0.0033807990000127575,
+        "nearest_measured_strong": 0.011830696999993506
+      },
+      "training_feature_columns": 1971,
+      "nearest_train_tanimoto_median": 0.40797635767790263
+    },
+    {
+      "document_id": "CHEMBL5380862",
+      "train_units": 235,
+      "test_units": 42,
+      "excluded_train_connection_overlap": 0,
+      "status": "complete",
+      "model_seconds": {
+        "lr_graph_weighted": 0.003498557999989771,
+        "lr_assay_balanced": 0.0038320680000083485,
+        "nearest_measured_strong": 0.010898792000006097
+      },
+      "training_feature_columns": 1975,
+      "nearest_train_tanimoto_median": 0.4222222222222222
+    },
+    {
+      "document_id": "CHEMBL6134846",
+      "train_units": 218,
+      "test_units": 54,
+      "excluded_train_connection_overlap": 5,
+      "status": "complete",
+      "model_seconds": {
+        "lr_graph_weighted": 0.0026231389999793464,
+        "lr_assay_balanced": 0.0027910549999887735,
+        "nearest_measured_strong": 0.01280630499999802
+      },
+      "training_feature_columns": 1991,
+      "nearest_train_tanimoto_median": 0.3457264484741265
+    }
+  ],
+  "primary_assay_macro": [
+    {
+      "method": "lr_assay_balanced",
+      "precision": 0.7444444444444445,
+      "recall": 0.20897164541447663,
+      "enrichment": 1.0074111611316694,
+      "roc_auc": 0.49904985901255794,
+      "average_precision": 0.754736884804828
+    },
+    {
+      "method": "lr_graph_weighted",
+      "precision": 0.7319444444444445,
+      "recall": 0.20721498102623329,
+      "enrichment": 0.9992126345120902,
+      "roc_auc": 0.4798756219404239,
+      "average_precision": 0.7431756764026473
+    },
+    {
+      "method": "nearest_measured_strong",
+      "precision": 0.7784722222222222,
+      "recall": 0.22383152237961673,
+      "enrichment": 1.0834649319222822,
+      "roc_auc": 0.5582410162486174,
+      "average_precision": 0.7983510383614354
+    },
+    {
+      "method": "random_expectation",
+      "precision": 0.729523712023712,
+      "recall": 0.20700947700947703,
+      "enrichment": 1.0,
+      "roc_auc": 0.5,
+      "average_precision": null
+    }
+  ],
+  "primary_assay_count": 5,
+  "primary_document_count": 5,
+  "scope": "assay_graph_units_known_antagonist_context_potency_not_function_direction",
+  "no_model_chosen_from_outer_test": true,
+  "uncertainty": "每来源逐项公开；来源少且化学系列相关，不作显著性或全库召回保证"
+}

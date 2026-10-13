@@ -1,0 +1,70 @@
+{
+  "package_version": "TransLock-GPR84_code_v1_2026-10-03",
+  "training": {
+    "seeds": [
+      20261001,
+      20261002,
+      20261003
+    ],
+    "learning_rates": [
+      0.0001,
+      0.001
+    ],
+    "primary_learning_rate": 0.0001,
+    "epochs": 30,
+    "batch_size": 16,
+    "gradient_clip_norm": 5.0,
+    "layer_norm_eps": 1e-05,
+    "weight_decay": 0.0,
+    "optimizer": "Adam",
+    "head_seed_offset": 1000,
+    "order_seed_offset": 2000
+  },
+  "encoder_hyper_parameters": {
+    "d_v": 72,
+    "d_e": 14,
+    "d_h": 2048,
+    "bias": false,
+    "depth": 6,
+    "dropout": 0.0,
+    "activation": "relu",
+    "undirected": false,
+    "d_vd": null,
+    "V_d_transform": null,
+    "graph_transform": null
+  },
+  "scope": {
+    "min_heavy_atoms": 15,
+    "max_heavy_atoms": 43,
+    "allowed_elements": [
+      "H",
+      "Br",
+      "C",
+      "Cl",
+      "F",
+      "N",
+      "O",
+      "P",
+      "S"
+    ],
+    "allow_radicals": false
+  },
+  "ranking": {
+    "primary_seed": 20261001,
+    "sensitivity_seeds": [
+      20261002,
+      20261003
+    ],
+    "score": "raw_logit",
+    "tie_break": "molecule_chembl_id_ascending",
+    "pool_fraction": 0.01,
+    "pool_cap": 1000,
+    "maximum_candidates": 10,
+    "unique_scaffold": "nonstereo_bemis_murcko"
+  },
+  "runtime": {
+    "processing_chunk": 1024,
+    "prediction_batch": 16,
+    "minimum_free_gib": 10
+  }
+}

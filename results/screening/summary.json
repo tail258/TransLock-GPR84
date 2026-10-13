@@ -1,0 +1,80 @@
+{
+  "input_records": 100000,
+  "scored_graphs": 82883,
+  "candidate_hypotheses": 10,
+  "candidate_pool": 829,
+  "status_counts": {
+    "scored_candidate_hypothesis_only": 82883,
+    "structure_or_scope_excluded": 14420,
+    "duplicate_excluded": 2685,
+    "known_target_excluded": 12
+  },
+  "preparation_seconds": 263.15538603499976,
+  "inference_seconds_three_models": 410.98577779900006,
+  "nearest_support_seconds": 71.34384755500014,
+  "scored_graphs_per_second_three_models": 201.66877901194775,
+  "model_run": "<storage-root>/artifacts/track3_rebuild/screening_full_fit_2026-10-01_v1",
+  "catalogue": "<storage-root>/downloads/screening_catalogue_2026-10-01_v1",
+  "primary_seed": 20261001,
+  "known_ids": 951,
+  "known_connections": 928,
+  "input_stats": {
+    "<rebuild-root>/configs/screening_application_2026-10-01.yaml": [
+      1120,
+      1790836432708198100
+    ],
+    "<storage-root>/downloads/screening_catalogue_2026-10-01_v1/manifest.json": [
+      200179,
+      1790838182068968700
+    ],
+    "<storage-root>/downloads/screening_catalogue_2026-10-01_v1/structures.csv": [
+      29152914,
+      1790838059218052300
+    ],
+    "<storage-root>/artifacts/track3_rebuild/screening_full_fit_2026-10-01_v1/manifest.json": [
+      808,
+      1790837099122301800
+    ],
+    "<storage-root>/artifacts/track3_rebuild/screening_identity_bridge_2026-10-01_v1/legacy_identity.csv": [
+      117532,
+      1790837417149945100
+    ],
+    "<storage-root>/artifacts/track3_rebuild/screening_identity_bridge_2026-10-01_v1/manifest.json": [
+      402,
+      1790837417185092000
+    ],
+    "<storage-root>/data/interim/chembl/37/gpr84/2026-09-03/activity_audit.parquet": [
+      144648,
+      1788410167191796500
+    ],
+    "<storage-root>/artifacts/track3_rebuild/pilot_2026-10-01_v2/manifest.json": [
+      1746,
+      1790784551722097500
+    ],
+    "<storage-root>/artifacts/track3_rebuild/screening_full_fit_2026-10-01_v1/model_20261001.pt": [
+      34868201,
+      1790837049205673600
+    ],
+    "<storage-root>/artifacts/track3_rebuild/screening_full_fit_2026-10-01_v1/model_20261002.pt": [
+      34868201,
+      1790837073929260100
+    ],
+    "<storage-root>/artifacts/track3_rebuild/screening_full_fit_2026-10-01_v1/model_20261003.pt": [
+      34868201,
+      1790837098361238200
+    ],
+    "<storage-root>/downloads/screening_catalogue_2026-10-01_v1/known_target_molecules.csv": [
+      265241,
+      1790838173680164300
+    ],
+    "<storage-root>/downloads/screening_catalogue_2026-10-01_v1/known_target_activities.csv": [
+      47447,
+      1790838088187604300
+    ]
+  },
+  "input_size_mtime_unchanged": true,
+  "gpu_peak_allocated_mib": 325.421875,
+  "activity_claim": "unknown; no prospective activity or direction validation",
+  "data_license": "CC BY-SA 3.0",
+  "checkpoint_license": "MIT"
+}

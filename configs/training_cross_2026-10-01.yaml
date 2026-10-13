@@ -1,0 +1,16 @@
+schema_version: 1
+status: frozen_before_cross_training
+base_run: artifacts/track3_rebuild/training_factor_2026-10-01_v1
+base_config: configs/training_factor_2026-10-01.yaml
+configurations:
+  - name: head_low_encoder_high
+    head_lr: 0.0001
+    encoder_lr: 0.001
+  - name: head_high_encoder_low
+    head_lr: 0.001
+    encoder_lr: 0.0001
+expected_models: 36
+expected_predictions: 1662
+notes:
+  - 两个对角格子从旧结果读取，不重训、不据外层分数选择配置。
+  - 基于已见结果提出的有限机制辨别，不是独立确认试验。

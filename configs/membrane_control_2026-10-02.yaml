@@ -1,0 +1,24 @@
+version: membrane_control_2026-10-02_v1
+receptor: artifacts/structure/functional_switch_2026-09-08_v1/prepared_v2/inactive.pdb
+uniprot: downloads/uniprot/Q9NQS5/2026-09-07/Q9NQS5.json
+ligand: scratch/acceptance-track3/9wij/9wij_A1L93_crystal.sdf
+ligand_smiles: O=c1nc(OC[C@@H]2COCCO2)cc2n1CCc1cc(C#CC3CC3)ccc1-2
+replace_native: [218, 318]
+synthetic_linker: AAAAAAAAAAAAA
+seed: 20261004
+forcefields: [amber14-all.xml, amber14/tip3p.xml]
+ligand_forcefield: openff-2.3.0.offxml
+minimum_padding_nm: 1.0
+ionic_strength_molar: 0.15
+minimum_free_GiB: 20
+max_gpu_temperature_C: 85
+max_stage_seconds: 1800
+stages:
+  - {name: nvt_50K, temperature_K: 50, time_ps: 10, timestep_fs: 1, restraint_k: 1000, pressure: false}
+  - {name: nvt_150K, temperature_K: 150, time_ps: 20, timestep_fs: 1, restraint_k: 1000, pressure: false}
+  - {name: nvt_250K, temperature_K: 250, time_ps: 20, timestep_fs: 1, restraint_k: 1000, pressure: false}
+  - {name: nvt_310K, temperature_K: 310, time_ps: 50, timestep_fs: 1, restraint_k: 1000, pressure: false}
+  - {name: npt_strong, temperature_K: 310, time_ps: 100, timestep_fs: 2, restraint_k: 500, pressure: true}
+  - {name: npt_medium, temperature_K: 310, time_ps: 250, timestep_fs: 2, restraint_k: 100, pressure: true}
+  - {name: npt_weak, temperature_K: 310, time_ps: 500, timestep_fs: 2, restraint_k: 10, pressure: true}
+  - {name: benchmark_unrestrained, temperature_K: 310, time_ps: 50, timestep_fs: 2, restraint_k: 0, pressure: true}

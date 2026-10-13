@@ -1,0 +1,33 @@
+schema_version: 1
+status: frozen_before_factor_training
+inputs:
+  pilot: artifacts/track3_rebuild/pilot_2026-10-01_v2
+  weight: downloads/chemeleon_probe_2026-10-01_v1/weights/chemeleon_mp.pt
+encoder:
+  chemprop: 2.2.0
+  dimensions: 2048
+  parameters: 8714240
+  device: cuda
+  threads: 4
+training:
+  seeds: [20261001, 20261002, 20261003]
+  learning_rates: [0.0001, 0.001]
+  primary_learning_rate: 0.0001
+  epochs: 30
+  batch_size: 16
+  gradient_clip_norm: 5.0
+  layer_norm_eps: 0.00001
+  weight_decay: 0.0
+  optimizer: Adam
+  head_seed_offset: 1000
+  order_seed_offset: 2000
+benchmark:
+  minimum_primary_assay_units: 10
+  primary_budget_fraction: 0.2
+  budget_fractions: [0.2]
+  score: raw_logit
+  tie_decimals: 12
+notes:
+  - 四组均使用同架构及相同头初值、固定30epoch，不选择最佳epoch。
+  - 第二学习率为预定敏感性，全部公开，不按测试结果选择配置。
+  - 不进行HPO，不把有限预算结论扩大为全部训练程序的性能上限。

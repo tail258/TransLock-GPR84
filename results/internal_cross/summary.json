@@ -1,0 +1,171 @@
+{
+  "status": "complete_bounded_exploratory_cross_check",
+  "models": 36,
+  "predictions": 1662,
+  "old_models_refit": 0,
+  "primary_assays": 5,
+  "input_stats": {
+    "<rebuild-root>/configs/training_cross_2026-10-01.yaml": [
+      560,
+      1790833865578343700
+    ],
+    "<rebuild-root>/configs/training_factor_2026-10-01.yaml": [
+      989,
+      1790830267220488800
+    ],
+    "<storage-root>/downloads/chemeleon_probe_2026-10-01_v1/weights/chemeleon_mp.pt": [
+      34859448,
+      1790786076935170800
+    ],
+    "<storage-root>/artifacts/track3_rebuild/training_factor_2026-10-01_v1/assay_graph_units.csv": [
+      74722,
+      1790784550000000000
+    ],
+    "<storage-root>/artifacts/track3_rebuild/training_factor_2026-10-01_v1/metrics_by_assay.csv": [
+      51983,
+      1790832535591958600
+    ],
+    "<storage-root>/artifacts/track3_rebuild/training_factor_2026-10-01_v1/fold_members.csv": [
+      479189,
+      1790831003897266700
+    ],
+    "<storage-root>/artifacts/track3_rebuild/training_factor_2026-10-01_v1/initial_states/20261001_pretrained_trained.pt": [
+      34868421,
+      1790831025413185800
+    ],
+    "<storage-root>/artifacts/track3_rebuild/training_factor_2026-10-01_v1/initial_states/20261002_pretrained_trained.pt": [
+      34868421,
+      1790831533714257700
+    ],
+    "<storage-root>/artifacts/track3_rebuild/training_factor_2026-10-01_v1/initial_states/20261003_pretrained_trained.pt": [
+      34868421,
+      1790832033117734700
+    ]
+  },
+  "input_size_mtime_unchanged": true,
+  "all_initial_states_equal_to_original": true,
+  "all_saved_predictions_exact": true,
+  "gpu_peak_allocated_mib": 586.88134765625,
+  "macro_by_seed": [
+    {
+      "condition": "head_high_encoder_high",
+      "seed": 20261001,
+      "expected_hits_with_ties": 6.6,
+      "enrichment": 0.9178007715212797,
+      "precision": 0.6875,
+      "recall": 0.19104956749239865,
+      "roc_auc": 0.5349469490475363,
+      "average_precision": 0.74350843528879
+    },
+    {
+      "condition": "head_high_encoder_high",
+      "seed": 20261002,
+      "expected_hits_with_ties": 6.6,
+      "enrichment": 0.9108263081947292,
+      "precision": 0.6722222222222223,
+      "recall": 0.18942277323402545,
+      "roc_auc": 0.4998539730651186,
+      "average_precision": 0.7205531977337418
+    },
+    {
+      "condition": "head_high_encoder_high",
+      "seed": 20261003,
+      "expected_hits_with_ties": 6.6,
+      "enrichment": 0.9520568008317554,
+      "precision": 0.6944444444444444,
+      "recall": 0.19806915407641357,
+      "roc_auc": 0.47438753165271785,
+      "average_precision": 0.7244594244006531
+    },
+    {
+      "condition": "head_high_encoder_low",
+      "seed": 20261001,
+      "expected_hits_with_ties": 7.6,
+      "enrichment": 1.0440621538171446,
+      "precision": 0.7666666666666666,
+      "recall": 0.21624437268720392,
+      "roc_auc": 0.5644889793669552,
+      "average_precision": 0.7595512544277304
+    },
+    {
+      "condition": "head_high_encoder_low",
+      "seed": 20261002,
+      "expected_hits_with_ties": 7.8,
+      "enrichment": 1.0759587055412827,
+      "precision": 0.7916666666666666,
+      "recall": 0.2231409244113418,
+      "roc_auc": 0.5734983290791981,
+      "average_precision": 0.7740363587656777
+    },
+    {
+      "condition": "head_high_encoder_low",
+      "seed": 20261003,
+      "expected_hits_with_ties": 7.8,
+      "enrichment": 1.072428327872974,
+      "precision": 0.7916666666666667,
+      "recall": 0.22289461899262264,
+      "roc_auc": 0.588327902324358,
+      "average_precision": 0.7720393783248514
+    },
+    {
+      "condition": "head_low_encoder_high",
+      "seed": 20261001,
+      "expected_hits_with_ties": 6.6,
+      "enrichment": 0.9388636167220559,
+      "precision": 0.6972222222222222,
+      "recall": 0.19480236641761142,
+      "roc_auc": 0.5508122491365792,
+      "average_precision": 0.7476525250148772
+    },
+    {
+      "condition": "head_low_encoder_high",
+      "seed": 20261002,
+      "expected_hits_with_ties": 7.6,
+      "enrichment": 1.0642298012533948,
+      "precision": 0.7791666666666666,
+      "recall": 0.2211379546043793,
+      "roc_auc": 0.5700653916810211,
+      "average_precision": 0.7704578012781267
+    },
+    {
+      "condition": "head_low_encoder_high",
+      "seed": 20261003,
+      "expected_hits_with_ties": 6.6,
+      "enrichment": 0.9628489981484538,
+      "precision": 0.7069444444444445,
+      "recall": 0.19994225375350602,
+      "roc_auc": 0.47632762824521124,
+      "average_precision": 0.7230021408997487
+    },
+    {
+      "condition": "head_low_encoder_low",
+      "seed": 20261001,
+      "expected_hits_with_ties": 7.8,
+      "enrichment": 1.0619566156771238,
+      "precision": 0.7819444444444444,
+      "recall": 0.21988073632356747,
+      "roc_auc": 0.5739445504852786,
+      "average_precision": 0.7720826291217262
+    },
+    {
+      "condition": "head_low_encoder_low",
+      "seed": 20261002,
+      "expected_hits_with_ties": 8.0,
+      "enrichment": 1.0976709013914097,
+      "precision": 0.8041666666666666,
+      "recall": 0.22702359346642464,
+      "roc_auc": 0.6112210885801149,
+      "average_precision": 0.7927601813185685
+    },
+    {
+      "condition": "head_low_encoder_low",
+      "seed": 20261003,
+      "expected_hits_with_ties": 8.4,
+      "enrichment": 1.1760408073475224,
+      "precision": 0.8583333333333334,
+      "recall": 0.24407688500247476,
+      "roc_auc": 0.5790581035917216,
+      "average_precision": 0.7745718350721594
+    }
+  ]
+}

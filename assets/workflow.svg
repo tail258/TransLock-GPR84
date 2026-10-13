@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 310" role="img" aria-labelledby="title desc">
+  <title id="title">TransLock-GPR84 workflow</title>
+  <desc id="desc">Public activity records are curated, used to fine-tune CheMeleon, evaluated with grouped splits and an external patent series, and applied to a molecular catalogue.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1">
+      <stop stop-color="#101b33"/>
+      <stop offset="1" stop-color="#173b46"/>
+    </linearGradient>
+    <linearGradient id="accent" x2="1">
+      <stop stop-color="#45d5c4"/>
+      <stop offset="1" stop-color="#88baff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="310" rx="22" fill="url(#bg)"/>
+  <text x="40" y="59" fill="#eff8fa" font-family="Arial, sans-serif" font-size="29" font-weight="700">TransLock-GPR84</text>
+  <text x="40" y="87" fill="#a9c6d0" font-family="Arial, sans-serif" font-size="16">A traceable, low-data screening workflow</text>
+  <path d="M42 113H1158" stroke="#375363" stroke-width="1"/>
+  <g font-family="Arial, sans-serif">
+    <g fill="#1f394d" stroke="#4e7480" stroke-width="1">
+      <rect x="42" y="137" width="200" height="112" rx="14"/>
+      <rect x="271" y="137" width="200" height="112" rx="14"/>
+      <rect x="500" y="137" width="200" height="112" rx="14"/>
+      <rect x="729" y="137" width="200" height="112" rx="14"/>
+      <rect x="958" y="137" width="200" height="112" rx="14"/>
+    </g>
+    <g fill="#75dfce" font-size="15" font-weight="700">
+      <text x="60" y="166">01  CURATE</text>
+      <text x="289" y="166">02  TRAIN</text>
+      <text x="518" y="166">03  EVALUATE</text>
+      <text x="747" y="166">04  SCREEN</text>
+      <text x="976" y="166">05  INTERPRET</text>
+    </g>
+    <g fill="#edf7f8" font-size="18" font-weight="600">
+      <text x="60" y="199">ChEMBL 37</text>
+      <text x="289" y="199">CheMeleon</text>
+      <text x="518" y="199">Grouped + patent</text>
+      <text x="747" y="199">82,883 graphs</text>
+      <text x="976" y="199">10 hypotheses</text>
+    </g>
+    <g fill="#a9c6d0" font-size="13">
+      <text x="60" y="225">285 admitted measures</text>
+      <text x="289" y="225">3 fixed seeds</text>
+      <text x="518" y="225">Retrospective evidence</text>
+      <text x="747" y="225">Fixed ranking rules</text>
+      <text x="976" y="225">Activity still unknown</text>
+    </g>
+  </g>
+  <g stroke="url(#accent)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M251 193h12m-5-5 5 5-5 5"/>
+    <path d="M480 193h12m-5-5 5 5-5 5"/>
+    <path d="M709 193h12m-5-5 5 5-5 5"/>
+    <path d="M938 193h12m-5-5 5 5-5 5"/>
+  </g>
+  <text x="42" y="280" fill="#a9c6d0" font-family="Arial, sans-serif" font-size="13">Computational prioritization · documented provenance · no prospective activity claim</text>
+</svg>

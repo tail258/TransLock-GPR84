@@ -1,0 +1,48 @@
+{
+  "status": "exclusion_applied_to_versioned_views_author_structure_correction_pending",
+  "execution": {
+    "authorization": "依据结构身份核查实施数据隔离与影响分析",
+    "report": "reports/data/2026-09-05-quarantine-impact.md",
+    "config": "configs/data/quarantine_impact_2026-09-05.yaml",
+    "dataset_relative_to_storage_root": "data/processed/quarantine/2026-09-05/exclude_50c_50d_v1",
+    "artifacts_relative_to_storage_root": "artifacts/data/quarantine_impact_2026-09-05_v1",
+    "historical_inputs_modified": false,
+    "author_structure_replacement_applied": false,
+    "legacy_entrypoints_globally_redirected": false,
+    "note": "运行 manifest 保留执行开始时的政策快照；本记录在成功排除与影响分析后追加"
+  },
+  "date": "2026-09-05",
+  "document": "CHEMBL6134846",
+  "evidence_report": "reports/data/2026-09-05-literature-stereo-audit.md",
+  "identity_alias_policy": "旧结构与作者结构关联为同一个已见来源化合物；修正后不能借新 InChIKey 声称独立",
+  "records": [
+    {
+      "compound": "50c",
+      "chembl_id": "CHEMBL6172440",
+      "record_id": 4698242,
+      "activity_id": 29256438,
+      "historical_key": "DTLSBRGTJSPKRM-UHFFFAOYSA-N",
+      "author_structure_key": "FMKMIBQHBGFWKM-UHFFFAOYSA-N",
+      "author_smiles": "CCCc1ccc(CCc2cc(O)cc(OCC3Oc4ccccc4O3)n2)cc1",
+      "evidence": ["jm4c02335_si_002.csv:71", "jm4c02335_si_001.pdf:S134"],
+      "decision": "旧结构-活性关联不得作为通过原始来源复核的数据；作者结构仅是待审修订提案"
+    },
+    {
+      "compound": "50d",
+      "chembl_id": "CHEMBL6162518",
+      "record_id": 4698243,
+      "activity_id": 29256439,
+      "historical_key": "MFIZQRDQEQJBBX-UHFFFAOYSA-N",
+      "author_structure_key": "ZPJRTNWKKVTRQC-UHFFFAOYSA-N",
+      "author_smiles": "CCCc1ccc(CCc2cc(O)cc(OCC3Cc4ccccc4O3)n2)cc1",
+      "evidence": ["jm4c02335_si_002.csv:72", "jm4c02335_si_001.pdf:S136"],
+      "decision": "旧结构关联隔离；修订提案仍有未指定立体中心，不直接放入正式主分析"
+    }
+  ],
+  "source_id_collision": {
+    "compound": "37e",
+    "csv_lines": [45, 46],
+    "decision": "原 CSV 同号两种结构；不猜测其中一个应为 37d，须正文核对"
+  },
+  "scope": "机器可读隔离身份清单；已用于指定排除版，作者结构修订仍待审；不是所有历史流水线的全局自动拦截器"
+}

@@ -1,0 +1,52 @@
+{
+  "status": "complete",
+  "mode": "run",
+  "started_utc": "2026-10-01T05:01:06.305344+00:00",
+  "completed_utc": "2026-10-01T05:28:04.759267+00:00",
+  "seconds": 1618.471539348,
+  "input_stats": {
+    "<rebuild-root>/configs/training_factor_2026-10-01.yaml": [
+      989,
+      1790830267220488800
+    ],
+    "<storage-root>/downloads/chemeleon_probe_2026-10-01_v1/weights/chemeleon_mp.pt": [
+      34859448,
+      1790786076935170800
+    ],
+    "<storage-root>/artifacts/track3_rebuild/pilot_2026-10-01_v2/assay_graph_units.csv": [
+      74722,
+      1790784550779112600
+    ]
+  },
+  "input_size_mtime_unchanged": true,
+  "versions": {
+    "torch": "2.11.0+cu128",
+    "chemprop": "2.2.0",
+    "numpy": "2.4.6",
+    "pandas": "3.0.5",
+    "rdkit": "2026.3.5",
+    "scikit-learn": "1.9.0"
+  },
+  "device": "NVIDIA GeForce RTX 5060 Ti",
+  "gpu_peak_allocated_mib": 588.53271484375,
+  "gpu_peak_reserved_mib": 720.0,
+  "peak_rss_mib": 2425.984375,
+  "python": "3.11.16 (main, Sep  1 2026, 14:18:37) [Clang 22.1.3 ]",
+  "argv": [
+    "<rebuild-root>/scripts/run_training_factor.py",
+    "--storage-root",
+    "<storage-root>",
+    "--config",
+    "<rebuild-root>/configs/training_factor_2026-10-01.yaml",
+    "--mode",
+    "run",
+    "--output",
+    "<storage-root>/artifacts/track3_rebuild/training_factor_2026-10-01_v1"
+  ],
+  "hashes_computed": false,
+  "deterministic_algorithms": true,
+  "tf32": false,
+  "mixed_precision": false,
+  "data_license": "CC BY-SA 3.0",
+  "checkpoint_license": "MIT"
+}

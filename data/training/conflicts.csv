@@ -1,0 +1,2 @@
+document_id,assay_id,smiles,connection_id,activity_ids,molecule_ids,measurement_count,relations,document_year,document_doi,unit_id,label,reason
+CHEMBL5154757,CHEMBL5159662,N#CC1=Cc2ccccc2Sc2ccccc21,N#CC1=Cc2ccccc2Sc2ccccc21,24897504;24897505,CHEMBL5170482,2,=;>,2022,10.1021/acs.jmedchem.1c01813,,,same_assay_graph_crosses_threshold

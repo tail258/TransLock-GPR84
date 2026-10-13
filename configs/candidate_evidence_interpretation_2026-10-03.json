@@ -1,0 +1,16 @@
+{
+  "version": "candidate_evidence_interpretation_2026-10-03_v1",
+  "source_reports": ["reports/2026-10-02-candidate-public-validation.md", "reports/2026-10-02-candidate-structure-evidence.md"],
+  "candidate_notes": {
+    "CHEMBL120691": {"background": "COX-1/COX-2及大鼠相关测量", "next_work": "已有3×5ns；解释整体位移及接触重排，后续取样按具体问题决定", "scope": "模型原主排名1；MD代表选择不是效力确证"},
+    "CHEMBL1085078": {"background": "γ分泌酶介导APP切割、Aβ读出", "next_work": "先核对两个差异姿势及可解释接触，再决定是否扩展MD", "scope": "两次对接差3.94Å；与现有MD代表有相关药理/子结构背景"},
+    "CHEMBL121380": {"background": "COX-1/COX-2相关测量", "next_work": "作为身份明确、姿势一致的扩展备选；先评估相对CHEMBL120691的信息增量", "scope": "对接重复一致；COX背景和相关子结构与既有代表重叠"},
+    "CHEMBL10661": {"background": "内皮素受体相关测量", "next_work": "先处理未指定手性及两个条件性状态的姿势分歧", "scope": "两个状态均有明显姿势差异；背景药理不能赋给GPR84"},
+    "CHEMBL1084979": {"background": "γ分泌酶介导APP切割、Aβ读出", "next_work": "先核查差异姿势，单一起点不宜直接解释为机制", "scope": "对接姿势差8.73Å；无此次MD证据"},
+    "CHEMBL116703": {"background": "伯氏疟原虫相关测量", "next_work": "先澄清手性/别名身份，再处理姿势分歧", "scope": "PubChem名称别名缺少对应双键立体信息，不能直接合并其实测身份"},
+    "CHEMBL118711": {"background": "COX-1/COX-2相关测量", "next_work": "先核查约10.64Å的姿势分歧与替代起点", "scope": "最近训练图相似性较高不等于可靠性已经校准"},
+    "CHEMBL1086046": {"background": "γ分泌酶/APP及药代、Caco-2、CYP3A4、hERG相关记录，部分值缺失", "next_work": "已有3×5ns；检查平移、内部变化及seed11后段漂移", "scope": "丰富的其他终点记录不等于GPR84选择性或安全性通过"},
+    "CHEMBL1083574": {"background": "γ分泌酶抑制相关测量", "next_work": "先明确未指定手性及状态依赖的姿势分歧", "scope": "s01约0.20Å而s02约7.72Å，不能只挑较一致的状态"},
+    "CHEMBL1084588": {"background": "γ分泌酶、肝微粒体及附加BioAssay记录", "next_work": "先明确未指定手性并保留两状态比较", "scope": "s01约3.31Å而s02约0.07Å，不能把最好状态代替原目录样品"}
+  }
+}

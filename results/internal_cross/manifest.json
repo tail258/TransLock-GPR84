@@ -1,0 +1,26 @@
+{
+  "status": "complete",
+  "started_utc": "2026-10-01T05:58:49.875736+00:00",
+  "completed_utc": "2026-10-01T06:12:19.760501+00:00",
+  "seconds": 809.895577288,
+  "argv": [
+    "<rebuild-root>/scripts/run_training_cross.py",
+    "--storage-root",
+    "<storage-root>",
+    "--config",
+    "<rebuild-root>/configs/training_cross_2026-10-01.yaml",
+    "--output",
+    "<storage-root>/artifacts/track3_rebuild/training_cross_2026-10-01_v1"
+  ],
+  "python": "3.11.16 (main, Sep  1 2026, 14:18:37) [Clang 22.1.3 ]",
+  "versions": {
+    "torch": "2.11.0+cu128",
+    "chemprop": "2.2.0",
+    "numpy": "2.4.6",
+    "pandas": "3.0.5",
+    "rdkit": "2026.3.5",
+    "scikit-learn": "1.9.0"
+  },
+  "peak_rss_mib": 2154.5703125,
+  "hashes_computed": false
+}

@@ -1,0 +1,47 @@
+schema_version: 1
+status: frozen_before_second_round_embeddings_and_scores
+evidence: exploratory_retrospective_existing_labels_not_blind
+inputs:
+  pilot: artifacts/track3_rebuild/pilot_2026-10-01_v2
+  weight: downloads/chemeleon_probe_2026-10-01_v1/weights/chemeleon_mp.pt
+  triazine_panel: artifacts/models/representation_information_loss_2026-09-09_v1/panel.json
+  binop_groups: artifacts/data/axial_stereo_audit_2026-09-27_v2/groups.json
+encoder:
+  name: CheMeleon
+  record: 15460715
+  chemprop: 2.2.0
+  featurizer: SimpleMoleculeMolGraphFeaturizer_default_v2
+  aggregation: MeanAggregation
+  representation: MPNN.fingerprint_default_identity_bn
+  output_dimensions: 2048
+  frozen: true
+  device: cpu
+  threads: 4
+  batch_size: 16
+  seed: 20261001
+  probe_rtol: 0.00001
+  probe_atol: 0.000001
+benchmark:
+  radius: 3
+  include_chirality: true
+  logistic_c: 1.0
+  max_iter: 3000
+  seed: 20261001
+  minimum_primary_assay_units: 10
+  primary_budget_fraction: 0.2
+  budget_fractions: [0.1, 0.2, 0.5]
+  methods: [chemeleon_scaled_lr, r3_scaled_lr]
+  scaler: train_only_graph_weighted_standard_scaler
+  with_mean: false
+  with_std: true
+probes:
+  tetrahedral: ['C[C@H](O)F', 'C[C@@H](O)F']
+  triazine_author_pairs: [[63, 64], [71, 72]]
+  binop_sample_pair: [15S, 15R]
+notes:
+  - 首轮结果全部保留；本轮单独检验预训练表示组合，不追认首轮确认性结果。
+  - 两个新分支仅此固定配置，无C或半径搜索，无全参数微调和assay权重叠加。
+  - 全6来源整篇留出、训练侧排除测试连接图；5主要assay与预算完全继承。
+  - 归因对照为scaled-r3，仍不隔离网络架构/维度等所有因素，不作纯预训练因果主张。
+  - 同SMILES、批次顺序和官方接口一致性是数值检查；结构对可分不是效力验证。
+  - BINOP同SMILES应同表示且继续隔离；不能因身份信息丢失而加入样品ID特征。

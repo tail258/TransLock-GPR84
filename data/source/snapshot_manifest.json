@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "query_date": "2026-09-03",
+  "source": "ChEMBL",
+  "source_release": "ChEMBL_37",
+  "source_release_date": "2026-05-01",
+  "target_chembl_id": "CHEMBL3714079",
+  "counts": {
+    "targets": 1,
+    "activities": 2070,
+    "assays": 168,
+    "molecules": 1033,
+    "documents": 20,
+    "sources": 3
+  },
+  "files": {
+    "targets": "targets.jsonl",
+    "activities": "activities.jsonl",
+    "assays": "assays.jsonl",
+    "molecules": "molecules.jsonl",
+    "documents": "documents.jsonl",
+    "sources": "sources.jsonl"
+  },
+  "random_seed": null,
+  "failure_count": 0,
+  "failure_samples": [],
+  "config": "configs/data/gate1_chembl_gpr84.yaml",
+  "source_manifest": "data_manifest/sources/chembl_37.yaml"
+}

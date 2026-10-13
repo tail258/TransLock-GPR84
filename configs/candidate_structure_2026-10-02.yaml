@@ -1,0 +1,32 @@
+version: candidate_structure_2026-10-02_v1
+candidates: artifacts/track3_rebuild/screening_application_2026-10-01_v1/candidate_hypotheses.csv
+references:
+  admitted_antagonist_context:
+    path: artifacts/track3_rebuild/training_factor_2026-10-01_v1/assay_graph_units.csv
+    id_column: unit_id
+    smiles_column: smiles
+    expected_rows: 277
+  chembl_gpr84_any_endpoint:
+    path: downloads/screening_catalogue_2026-10-01_v1/known_target_molecules.csv
+    id_column: molecule_chembl_id
+    smiles_column: canonical_smiles
+    expected_rows: 951
+  bindingdb_gpr84_untyped:
+    path: artifacts/track3_rebuild/candidate_public_validation_2026-10-02_v1/bindingdb_gpr84_structures_v2.csv
+    id_column: row
+    smiles_column: smiles
+    expected_rows: 592
+  legacy_identity_untyped:
+    path: artifacts/track3_rebuild/screening_identity_bridge_2026-10-01_v1/legacy_identity.csv
+    id_column: molecule_chembl_id
+    smiles_column: standardized_smiles
+receptor: artifacts/structure/functional_switch_2026-09-08_v1/prepared_v2/inactive.pdb
+geometry: artifacts/structure/functional_switch_2026-09-08_v1/prepared_v2/geometry.json
+control_crystal: scratch/acceptance-track3/9wij/9wij_A1L93_crystal.sdf
+embedding_seed: 20261002
+docking_seeds: [20261002, 20261003]
+engine: {exhaustiveness: 8, num_modes: 20, cpu: 6, device: 0, autobox_extend: false}
+minimum_free_GiB: 20
+max_gpu_temperature_C: 85
+max_job_seconds: 300
+minimum_receptor_heavy_distance_A: 1.5

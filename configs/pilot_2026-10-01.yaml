@@ -1,0 +1,33 @@
+schema_version: 1
+status: frozen_before_new_scoring_exploratory_existing_public_labels
+task: human_GPR84_functional_antagonist_assay_potency_retrieval
+inputs:
+  audit: data/interim/chembl/37/gpr84/2026-09-03/activity_audit.parquet
+  raw_activities: data/raw/chembl/37/gpr84/2026-09-03/activities.jsonl
+  quarantine: configs/data/source_identity_quarantine_2026-09-05.json
+policy:
+  target_id: CHEMBL3714079
+  threshold_nm: 1000.0
+  min_confidence: 9
+  excluded_documents: [CHEMBL5500419]
+  excluded_molecule_ids: [CHEMBL6172440, CHEMBL6162518, CHEMBL6171982, CHEMBL6165269]
+  excluded_alias_smiles: []
+benchmark:
+  radius: 3
+  include_chirality: true
+  logistic_c: 1.0
+  max_iter: 3000
+  seed: 20261001
+  minimum_primary_assay_units: 10
+  primary_budget_fraction: 0.2
+  budget_fractions: [0.1, 0.2, 0.5]
+  preselected_primary_model: lr_graph_weighted
+  sole_optional_comparison: lr_assay_balanced
+notes:
+  - 仅使用明确人源拮抗功能IC50语境，实测弱效不是全局无活性或功能方向阴性。
+  - 全BINOP来源暂不用于拟合，50c/50d与两个37e来源编号冲突图隔离，不宣称已修复。
+  - 整篇来源留出且剔除训练侧测试连接图；历史标签已见，不称独立盲测。
+  - 同assay同编码图跨阈值冲突不聚合，同类重复只计一个单位并保留原测量ID。
+  - 显式保留已编码原子手性；未编码立体与轴手性不能凭指纹恢复。
+  - 所有模型只运行本轮固定参数；外层评价不用于改参数或报最优模型确认结果。
+  - 并列边界命中采用期望值，分数不是实测概率；随机AP留空而非混同常数分类器AP。

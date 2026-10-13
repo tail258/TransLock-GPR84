@@ -1,0 +1,34 @@
+[project]
+name = "translock-screening-rebuild"
+version = "0.1.0"
+description = "公开实验记录驱动的可追溯筛选重构"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+  "joblib==1.6.0",
+  "numpy==2.4.6",
+  "pandas==3.0.5",
+  "pyarrow==25.0.1",
+  "pyyaml==6.0.3",
+  "rdkit==2026.3.5",
+  "scikit-learn==1.9.0",
+  "scipy==1.17.1",
+]
+
+[dependency-groups]
+dev = ["pytest==9.1.1", "ruff==0.16.5"]
+reporting = ["matplotlib==3.11.1"]
+
+[tool.uv]
+package = false
+environments = ["sys_platform == 'linux'"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

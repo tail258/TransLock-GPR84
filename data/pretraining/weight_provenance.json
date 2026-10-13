@@ -1,0 +1,13 @@
+{
+  "url": "https://zenodo.org/api/records/15460715/files/chemeleon_mp.pt/content",
+  "doi": "10.5281/zenodo.15460715",
+  "license": "MIT",
+  "expected_bytes": 34859448,
+  "started_utc": "2026-09-30T16:32:52.869077+00:00",
+  "hashes_computed": false,
+  "status": "download_complete_not_yet_inference_verified",
+  "http_status": 200,
+  "resolved_url": "https://zenodo.org/api/records/15460715/files/chemeleon_mp.pt/content",
+  "actual_bytes": 34859448,
+  "completed_utc": "2026-09-30T16:33:47.239806+00:00"
+}

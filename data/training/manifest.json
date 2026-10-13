@@ -1,0 +1,58 @@
+{
+  "started_utc": "2026-09-30T16:08:20.471945+00:00",
+  "completed_utc": "2026-09-30T16:08:22.015671+00:00",
+  "status": "exploratory_retrospective_source_holdout_not_blind_test",
+  "inputs": [
+    "<storage-root>/data/interim/chembl/37/gpr84/2026-09-03/activity_audit.parquet",
+    "<storage-root>/data/raw/chembl/37/gpr84/2026-09-03/activities.jsonl",
+    "<legacy-root>/configs/data/source_identity_quarantine_2026-09-05.json"
+  ],
+  "input_size_mtime_unchanged": true,
+  "versions": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.5",
+    "rdkit": "2026.3.5",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.17.1",
+    "pyarrow": "25.0.1",
+    "pyyaml": "6.0.3"
+  },
+  "python": "3.11.16 (main, Sep  1 2026, 14:18:37) [Clang 22.1.3 ]",
+  "argv": [
+    "scripts/run_pilot.py",
+    "--storage-root",
+    "<storage-root>",
+    "--legacy-root",
+    "<legacy-root>",
+    "--config",
+    "configs/pilot_2026-10-01.yaml",
+    "--output",
+    "<storage-root>/artifacts/track3_rebuild/pilot_2026-10-01_v2"
+  ],
+  "peak_rss_mib": 304.06640625,
+  "hashes_computed": false,
+  "expanded_policy": {
+    "target_id": "CHEMBL3714079",
+    "threshold_nm": 1000.0,
+    "min_confidence": 9,
+    "excluded_documents": [
+      "CHEMBL5500419"
+    ],
+    "excluded_molecule_ids": [
+      "CHEMBL6172440",
+      "CHEMBL6162518",
+      "CHEMBL6171982",
+      "CHEMBL6165269"
+    ],
+    "excluded_alias_smiles": [
+      "CCCc1ccc(CCc2cc(O)cc(OCC3Oc4ccccc4O3)n2)cc1",
+      "CCCc1ccc(CCc2cc(O)cc(OCC3Cc4ccccc4O3)n2)cc1",
+      "CCCc1ccc(COCc2cc(O)cc(OCC3CCCCO3)n2)cc1",
+      "CCCc1cc(O)cc(OCC2Oc3ccccc3O2)n1",
+      "CCCc1cc(O)cc(OCC2Cc3ccccc3O2)n1",
+      "Cc1cc(Cl)ccc1OCc1cc(O)cc(OCC2CCCCO2)n1"
+    ]
+  },
+  "original_inputs_modified": false,
+  "gpu_used": false
+}

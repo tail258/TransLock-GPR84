@@ -1,0 +1,45 @@
+schema_version: 1
+query_date: "2026-09-03"
+source_manifest: data_manifest/sources/chembl_37.yaml
+
+target:
+  uniprot_accession: Q9NQS5
+  expected_target_chembl_id: CHEMBL3714079
+
+request:
+  timeout_seconds: 60
+
+raw_snapshot:
+  raw_directory: "${SXYZJ_DATA_ROOT}/raw/chembl/37/gpr84/2026-09-03"
+  page_size: 500
+  batch_size: 50
+
+audit:
+  min_assay_confidence: 9
+  allowed_endpoint_types:
+    - IC50
+    - Ki
+    - Kd
+    - Kb
+  required_units: nM
+  exact_relations:
+    - "="
+  binned_assay_min_records: 8
+  binned_assay_max_unique_values: 3
+  gate1_thresholds:
+    min_unique_structures: 200
+    min_assays: 3
+    min_documents: 5
+    min_year_span: 3
+    max_structure_failure_fraction: 0.05
+
+audit_output:
+  interim_directory: "${SXYZJ_DATA_ROOT}/interim/chembl/37/gpr84/2026-09-03"
+  processed_path: "${SXYZJ_DATA_ROOT}/processed/chembl/37/gpr84/2026-09-03/functional_antagonist_ic50.parquet"
+  regression_path: "${SXYZJ_DATA_ROOT}/processed/chembl/37/gpr84/2026-09-03/continuous_functional_antagonist_ic50.parquet"
+  summary_path: "${SXYZJ_ARTIFACT_ROOT}/data/gate1/chembl_gpr84_audit_summary.json"
+
+output:
+  artifact_path: "${SXYZJ_ARTIFACT_ROOT}/data/gate1/chembl_gpr84_probe.json"
+
+random_seed: null

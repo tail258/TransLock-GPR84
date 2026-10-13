@@ -1,0 +1,31 @@
+schema_version: 1
+status: fixed_before_catalogue_scoring
+inputs:
+  catalogue: downloads/screening_catalogue_2026-10-01_v1
+  pilot: artifacts/track3_rebuild/pilot_2026-10-01_v2
+  factor: artifacts/track3_rebuild/training_factor_2026-10-01_v1
+  audit: data/interim/chembl/37/gpr84/2026-09-03/activity_audit.parquet
+  weight: downloads/chemeleon_probe_2026-10-01_v1/weights/chemeleon_mp.pt
+expected_input_records: 100000
+scope:
+  min_heavy_atoms: 15
+  max_heavy_atoms: 43
+  allowed_elements: [H, Br, C, Cl, F, N, O, P, S]
+  allow_radicals: false
+ranking:
+  primary_seed: 20261001
+  sensitivity_seeds: [20261002, 20261003]
+  score: raw_logit
+  tie_break: molecule_chembl_id_ascending
+  pool_fraction: 0.01
+  pool_cap: 1000
+  maximum_candidates: 10
+  unique_scaffold: nonstereo_bemis_murcko
+runtime:
+  processing_chunk: 1024
+  prediction_batch: 16
+  minimum_free_gib: 10
+notes:
+  - 复用原1e-4/30epoch/三个种子，各全量拟合一次，不选测试集胜者。
+  - 粗结构范围来自训练集，不等于有效适用域或药效保证。
+  - 活性未知不作阴性；神经分数与相似性参照分别报告。

@@ -1,0 +1,17 @@
+{
+  "status": "complete",
+  "source": "<storage-root>/data/interim/chembl/37/gpr84/2026-09-03/activity_audit.parquet",
+  "source_stats": [
+    144648,
+    1788410167191796500
+  ],
+  "rows": 2070,
+  "columns": [
+    "molecule_chembl_id",
+    "standardized_smiles"
+  ],
+  "retained_all_rows": true,
+  "projection_readback": "pass",
+  "utc": "2026-10-01T06:49:26.213897+00:00",
+  "hashes_computed": false
+}

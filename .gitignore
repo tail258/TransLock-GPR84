@@ -1,0 +1,33 @@
+# Local environments and build output
+.venv/
+**/.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.env
+.env.*
+!.env.example
+outputs/
+logs/
+
+# Models and high-volume research resources are distributed separately.
+*.pt
+*.ckpt
+*.dcd
+*.xtc
+*.trr
+*.zip
+*.7z
+*.mp4
+*.vhdx
+data/catalogue/
+models/pretrained/
+results/structures/
+results/md_interactions/
+results/md_interpretation/
+
+# Personal notes and local workspace state
+.obsidian/
+**/.obsidian/
+*.local.json

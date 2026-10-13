@@ -1,0 +1,5 @@
+molecule_chembl_id,canonical_smiles
+CHEMBL120691,CS(=O)(=O)c1ccc(-c2nn3c4c(cnc3c2-c2ccc(F)cc2)C(=O)CC4)cc1
+CHEMBL1086046,CS(=O)(=O)NC[C@@H]1CCC[C@@]2(S(=O)(=O)c3ccc(C(F)(F)F)cc3)c3c(F)ccc(F)c3OC[C@@H]12
+CHEMBL3717853,CC(C)CC(O)C#Cc1ccc2c(c1)CCn1c-2cc(OCC2COCCO2)nc1=O
+DEMO_OUT_OF_SCOPE,CCO

@@ -1,0 +1,18 @@
+{
+  "status": "pass",
+  "input_records": 100000,
+  "scored_graphs": 82883,
+  "all_three_seed_rankings_recomputed": true,
+  "similarity_ranking_recomputed": true,
+  "nomination_rule_rebuilt": true,
+  "candidate_2d_sdf_identity_checked": 10,
+  "candidate_properties_and_nearest_neighbors_recomputed": 10,
+  "exported_support_rows_checked": 30,
+  "exclusion_keys_rebuilt_from_bridge_policy_and_current_target": true,
+  "scope": "全表清点/排除键/排序核验；候选逐项结构和近邻重算；不冒称独立重算全部模型预测或全部原始图标准化",
+  "versions": {
+    "rdkit": "2026.3.5",
+    "pandas": "3.0.5",
+    "matplotlib": "3.11.1"
+  }
+}

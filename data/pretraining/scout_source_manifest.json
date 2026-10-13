@@ -1,0 +1,74 @@
+[
+  {
+    "file": "zenodo_15460715_metadata.json",
+    "url": "https://zenodo.org/api/records/15460715",
+    "retrieved_at": "2026-10-01T00:30:26.4417673+08:00",
+    "bytes": 3936
+  },
+  {
+    "file": "chemeleon_fingerprint.py",
+    "url": "https://raw.githubusercontent.com/JacksonBurns/chemeleon/main/chemeleon_fingerprint.py",
+    "retrieved_at": "2026-10-01T00:30:32.3497811+08:00",
+    "bytes": 2479
+  },
+  {
+    "file": "chemeleon_LICENSE",
+    "url": "https://raw.githubusercontent.com/JacksonBurns/chemeleon/main/LICENSE",
+    "retrieved_at": "2026-10-01T00:30:39.7955056+08:00",
+    "bytes": 1070
+  },
+  {
+    "file": "chemprop_v2.2.0_atom.py",
+    "url": "https://raw.githubusercontent.com/chemprop/chemprop/v2.2.0/chemprop/featurizers/atom.py",
+    "retrieved_at": "2026-10-01T00:30:45.7274914+08:00",
+    "bytes": 9480
+  },
+  {
+    "file": "chemprop_v2.2.0_bond.py",
+    "url": "https://raw.githubusercontent.com/chemprop/chemprop/v2.2.0/chemprop/featurizers/bond.py",
+    "retrieved_at": "2026-10-01T00:30:51.8330735+08:00",
+    "bytes": 4038
+  },
+  {
+    "file": "chemprop_v2.2.0_mixins.py",
+    "url": "https://raw.githubusercontent.com/chemprop/chemprop/v2.2.0/chemprop/featurizers/molgraph/mixins.py",
+    "retrieved_at": "2026-10-01T00:30:57.8632855+08:00",
+    "bytes": 852
+  },
+  {
+    "file": "chemprop_v2.2.0_molecule.py",
+    "url": "https://raw.githubusercontent.com/chemprop/chemprop/v2.2.0/chemprop/featurizers/molgraph/molecule.py",
+    "retrieved_at": "2026-10-01T00:31:03.8745042+08:00",
+    "bytes": 3481
+  },
+  {
+    "file": "chemprop_v2.2.0_model.py",
+    "url": "https://raw.githubusercontent.com/chemprop/chemprop/v2.2.0/chemprop/models/model.py",
+    "retrieved_at": "2026-10-01T00:31:10.1891121+08:00",
+    "bytes": 12316
+  },
+  {
+    "file": "chemprop_v2.2.0_agg.py",
+    "url": "https://raw.githubusercontent.com/chemprop/chemprop/v2.2.0/chemprop/nn/agg.py",
+    "retrieved_at": "2026-10-01T00:31:16.4632757+08:00",
+    "bytes": 4324
+  },
+  {
+    "file": "chemprop_v2.2.0_pyproject.toml",
+    "url": "https://raw.githubusercontent.com/chemprop/chemprop/v2.2.0/pyproject.toml",
+    "retrieved_at": "2026-10-01T00:31:22.4957059+08:00",
+    "bytes": 2148
+  },
+  {
+    "file": "chemprop_v2.2.0_LICENSE.txt",
+    "url": "https://raw.githubusercontent.com/chemprop/chemprop/v2.2.0/LICENSE.txt",
+    "retrieved_at": "2026-10-01T00:31:27.5415210+08:00",
+    "bytes": 1515
+  },
+  {
+    "file": "chemeleon_commit.json",
+    "url": "https://api.github.com/repos/JacksonBurns/chemeleon/commits/main",
+    "retrieved_at": "2026-10-01T00:31:34.6167812+08:00",
+    "bytes": 27071
+  }
+]

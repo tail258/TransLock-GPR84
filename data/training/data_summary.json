@@ -1,0 +1,26 @@
+{
+  "raw_measurements": 2070,
+  "admitted_measurements": 285,
+  "excluded_measurements": 1785,
+  "exclusion_reason_counts_nonexclusive": {
+    "binned_assay_not_reinterpreted": 435,
+    "not_functional_ic50": 1290,
+    "not_nm_antagonist_context": 1255,
+    "standardization_or_duplicate_flag": 608,
+    "interval_not_classifiable": 207,
+    "validity_flag": 8,
+    "low_or_missing_confidence": 1,
+    "source_identity_audit_restriction": 68,
+    "quarantined_molecule": 10
+  },
+  "evidence_level": "database_record_retrospective_not_full_source_certification",
+  "units": 277,
+  "conflicting_units": 1,
+  "source_documents": 6,
+  "assays": 17,
+  "input_graphs": 248,
+  "unit_class_counts": {
+    "1": 208,
+    "0": 69
+  }
+}
